@@ -15,3 +15,7 @@ code {
 .clickable {
   cursor: pointer;
 }
+
+.nav-bottom {
+  margin-bottom: 2rem;
+}

@@ -1,9 +1,9 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 const Navigation = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light rounded">
+    <nav className="navbar navbar-expand-lg navbar-light bg-light rounded nav-bottom">
       <Link className="navbar-brand" to="/">
         Vidly
       </Link>
@@ -21,20 +21,20 @@ const Navigation = () => {
 
       <div className="collapse navbar-collapse" id="navbarsExample09">
         <ul className="navbar-nav mr-auto">
-          <li className="nav-item active">
-            <Link className="nav-link" to="/movies">
+          <li className="nav-item">
+            <NavLink className="nav-link" to="/movies">
               Movies <span className="sr-only">(current)</span>
-            </Link>
+            </NavLink>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" to="/customers">
+            <NavLink className="nav-link" to="/customers">
               Customers
-            </Link>
+            </NavLink>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" to="/rentals">
+            <NavLink className="nav-link" to="/rentals">
               Rentals
-            </Link>
+            </NavLink>
           </li>
         </ul>
       </div>

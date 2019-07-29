@@ -12,12 +12,14 @@ function App() {
     <React.Fragment>
       <Navigation />
       <main className="container">
-        <Route path="/rentals" component={Rentals} />
-        <Route path="/customers" component={Customers} />
-        <Route path="/movies" component={Movie} />
-        <Route path="/not-found" component={NotFound} />
-        <Route path="/" exact component={Movie} />
-        <Redirect to="/not-found" />
+        <Switch>
+          <Route path="/rentals" component={Rentals} />
+          <Route path="/customers" component={Customers} />
+          <Route path="/movies" component={Movie} />
+          <Route path="/not-found" component={NotFound} />
+          <Route path="/" exact component={Movie} />
+          <Redirect to="/not-found" />
+        </Switch>
       </main>
     </React.Fragment>
   );

@@ -88,7 +88,7 @@ class Movies extends Component {
     const { totalCount, data: movies } = this.getPageData();
 
     return (
-      <div className="row mt-5">
+      <div className="row">
         <div className="col-3">
           <ListGroup
             items={genres}
